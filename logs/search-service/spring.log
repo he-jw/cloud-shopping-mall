@@ -1,0 +1,19 @@
+05:58:01:273  WARN 31672 --- [Thread-5] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Start destroying Publisher
+05:58:01:273  WARN 31672 --- [Thread-1] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Start destroying common HttpClient
+05:58:01:393  WARN 31672 --- [Thread-5] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Destruction of the end
+05:58:01:404  WARN 31672 --- [Thread-1] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Destruction of the end
+05:58:01:570  INFO 31672 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] o.s.a.r.l.SimpleMessageListenerContainer : Waiting for workers to finish.
+05:58:01:573  INFO 31672 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-2] o.s.a.r.l.SimpleMessageListenerContainer : Waiting for workers to finish.
+05:58:01:911  INFO 31672 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-2] o.s.a.r.l.SimpleMessageListenerContainer : Successfully waited for workers to finish.
+05:58:01:957  INFO 31672 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] o.s.a.r.l.SimpleMessageListenerContainer : Successfully waited for workers to finish.
+05:58:02:532  INFO 31672 --- [SpringContextShutdownHook] o.s.a.r.l.SimpleMessageListenerContainer : Shutdown ignored - container is already stopped
+05:58:02:533  INFO 31672 --- [SpringContextShutdownHook] o.s.a.r.l.SimpleMessageListenerContainer : Shutdown ignored - container is already stopped
+05:58:02:562  INFO 31672 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+05:58:02:623  INFO 31672 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+05:58:02:628  INFO 31672 --- [SpringContextShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registering from Nacos Server now...
+05:58:02:654  INFO 31672 --- [SpringContextShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registration finished.
+05:58:03:000  INFO 31672 --- [SpringContextShutdownHook] com.alibaba.nacos.common.remote.client   : Shutdown rpc client, set status to shutdown
+05:58:03:000  INFO 31672 --- [SpringContextShutdownHook] com.alibaba.nacos.common.remote.client   : Shutdown client event executor java.util.concurrent.ScheduledThreadPoolExecutor@61c8fa91[Running, pool size = 2, active threads = 2, queued tasks = 0, completed tasks = 0]
+05:58:03:001  INFO 31672 --- [SpringContextShutdownHook] com.alibaba.nacos.common.remote.client   : Close current connection 1724341108323_192.168.174.1_51719
+05:58:03:010  INFO 31672 --- [nacos-grpc-client-executor-4581] c.a.n.c.remote.client.grpc.GrpcClient    : [1724341108323_192.168.174.1_51719]Ignore complete event,isRunning:false,isAbandon=false
+05:58:03:038  INFO 31672 --- [SpringContextShutdownHook] c.a.n.c.remote.client.grpc.GrpcClient    : Shutdown grpc executor java.util.concurrent.ThreadPoolExecutor@3a5af126[Running, pool size = 5, active threads = 0, queued tasks = 0, completed tasks = 4582]

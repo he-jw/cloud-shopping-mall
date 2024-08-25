@@ -1,0 +1,17 @@
+server:
+  port: 8087
+hm:
+  swagger:
+    title: 搜索商品服务接口文档
+    package: com.hmall.search.controller
+  db:
+    database: hm-item
+  elasticsearch:
+    url: http://192.168.174.136:9200
+spring:
+  rabbitmq:
+    host: 192.168.174.136 # 你的虚拟机IP
+    port: 5672 # 端口
+    virtual-host: /hmall # 虚拟主机
+    username: hmall # 用户名
+    password: 123 # 密码

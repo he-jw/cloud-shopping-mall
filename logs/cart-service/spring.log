@@ -1,0 +1,83 @@
+04:27:22:273 DEBUG 20584 --- [http-nio-8082-exec-3] c.h.cart.mapper.CartMapper.selectList    : ==>  Preparing: SELECT id,user_id,item_id,num,name,spec,price,image,create_time,update_time FROM cart WHERE (user_id = ?)
+04:27:22:858 DEBUG 20584 --- [http-nio-8082-exec-3] c.h.cart.mapper.CartMapper.selectList    : ==> Parameters: 1(Long)
+04:27:22:891 DEBUG 20584 --- [http-nio-8082-exec-3] c.h.cart.mapper.CartMapper.selectList    : <==      Total: 0
+04:27:27:125 DEBUG 20584 --- [http-nio-8082-exec-2] c.h.cart.mapper.CartMapper.selectList    : ==>  Preparing: SELECT id,user_id,item_id,num,name,spec,price,image,create_time,update_time FROM cart WHERE (user_id = ?)
+04:27:27:127 DEBUG 20584 --- [http-nio-8082-exec-2] c.h.cart.mapper.CartMapper.selectList    : ==> Parameters: 1(Long)
+04:27:27:130 DEBUG 20584 --- [http-nio-8082-exec-2] c.h.cart.mapper.CartMapper.selectList    : <==      Total: 0
+04:27:49:688 DEBUG 20584 --- [http-nio-8082-exec-5] c.h.cart.mapper.CartMapper.selectCount   : ==>  Preparing: SELECT COUNT( * ) FROM cart WHERE (user_id = ? AND item_id = ?)
+04:27:49:688 DEBUG 20584 --- [http-nio-8082-exec-5] c.h.cart.mapper.CartMapper.selectCount   : ==> Parameters: 1(Long), 546872(Long)
+04:27:49:711 DEBUG 20584 --- [http-nio-8082-exec-5] c.h.cart.mapper.CartMapper.selectCount   : <==      Total: 1
+04:27:49:716 DEBUG 20584 --- [http-nio-8082-exec-5] c.h.cart.mapper.CartMapper.selectCount   : ==>  Preparing: SELECT COUNT( * ) FROM cart WHERE (user_id = ?)
+04:27:49:717 DEBUG 20584 --- [http-nio-8082-exec-5] c.h.cart.mapper.CartMapper.selectCount   : ==> Parameters: 1(Long)
+04:27:49:719 DEBUG 20584 --- [http-nio-8082-exec-5] c.h.cart.mapper.CartMapper.selectCount   : <==      Total: 1
+04:27:49:932 DEBUG 20584 --- [http-nio-8082-exec-5] com.hmall.cart.mapper.CartMapper.insert  : ==>  Preparing: INSERT INTO cart ( user_id, item_id, name, price, image ) VALUES ( ?, ?, ?, ?, ? )
+04:27:49:936 DEBUG 20584 --- [http-nio-8082-exec-5] com.hmall.cart.mapper.CartMapper.insert  : ==> Parameters: 1(Long), 546872(Long), 博兿（BOYI）拉杆包男23英寸大容量旅行包户外手提休闲拉杆袋 BY09186黑灰色(String), 27500(Integer), https://m.360buyimg.com/mobilecms/s720x720_jfs/t3301/221/3887995271/90563/bf2cadb/57f9fbf4N8e47c225.jpg!q70.jpg.webp(String)
+04:27:49:959 DEBUG 20584 --- [http-nio-8082-exec-5] com.hmall.cart.mapper.CartMapper.insert  : <==    Updates: 1
+04:27:50:082 DEBUG 20584 --- [http-nio-8082-exec-6] c.h.cart.mapper.CartMapper.selectList    : ==>  Preparing: SELECT id,user_id,item_id,num,name,spec,price,image,create_time,update_time FROM cart WHERE (user_id = ?)
+04:27:50:083 DEBUG 20584 --- [http-nio-8082-exec-6] c.h.cart.mapper.CartMapper.selectList    : ==> Parameters: 1(Long)
+04:27:50:102 DEBUG 20584 --- [http-nio-8082-exec-6] c.h.cart.mapper.CartMapper.selectList    : <==      Total: 1
+04:27:50:139 DEBUG 20584 --- [http-nio-8082-exec-6] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] ---> GET http://item-service/items?ids=546872 HTTP/1.1
+04:27:50:140 DEBUG 20584 --- [http-nio-8082-exec-6] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] userInfo: 1
+04:27:50:140 DEBUG 20584 --- [http-nio-8082-exec-6] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] ---> END HTTP (0-byte body)
+04:27:51:043  INFO 20584 --- [nacos-grpc-client-executor-4436] com.alibaba.nacos.common.remote.client   : [8589000f-4bcd-47a9-a171-2719806402de] Receive server push request, request = NotifySubscriberRequest, requestId = 292
+04:27:51:044  INFO 20584 --- [nacos-grpc-client-executor-4436] com.alibaba.nacos.common.remote.client   : [8589000f-4bcd-47a9-a171-2719806402de] Ack server push request, request = NotifySubscriberRequest, requestId = 292
+04:27:52:663 DEBUG 20584 --- [http-nio-8082-exec-6] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] <--- HTTP/1.1 200  (2521ms)
+04:27:52:663 DEBUG 20584 --- [http-nio-8082-exec-6] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] connection: keep-alive
+04:27:52:664 DEBUG 20584 --- [http-nio-8082-exec-6] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] content-type: application/json
+04:27:52:664 DEBUG 20584 --- [http-nio-8082-exec-6] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] date: Thu, 22 Aug 2024 20:27:52 GMT
+04:27:52:664 DEBUG 20584 --- [http-nio-8082-exec-6] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] keep-alive: timeout=60
+04:27:52:664 DEBUG 20584 --- [http-nio-8082-exec-6] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] transfer-encoding: chunked
+04:27:52:664 DEBUG 20584 --- [http-nio-8082-exec-6] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] 
+04:27:52:666 DEBUG 20584 --- [http-nio-8082-exec-6] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] [{"id":"546872","name":"博兿（BOYI）拉杆包男23英寸大容量旅行包户外手提休闲拉杆袋 BY09186黑灰色","price":27500,"stock":10000,"image":"https://m.360buyimg.com/mobilecms/s720x720_jfs/t3301/221/3887995271/90563/bf2cadb/57f9fbf4N8e47c225.jpg!q70.jpg.webp","category":"拉杆箱","brand":"博兿","spec":"{\"颜色\": \"黑色\"}","sold":0,"commentCount":0,"isAD":false,"status":1}]
+04:27:52:666 DEBUG 20584 --- [http-nio-8082-exec-6] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] <--- END HTTP (404-byte body)
+04:27:59:692 DEBUG 20584 --- [http-nio-8082-exec-7] c.h.cart.mapper.CartMapper.selectCount   : ==>  Preparing: SELECT COUNT( * ) FROM cart WHERE (user_id = ? AND item_id = ?)
+04:27:59:693 DEBUG 20584 --- [http-nio-8082-exec-7] c.h.cart.mapper.CartMapper.selectCount   : ==> Parameters: 1(Long), 546872(Long)
+04:27:59:697 DEBUG 20584 --- [http-nio-8082-exec-7] c.h.cart.mapper.CartMapper.selectCount   : <==      Total: 1
+04:27:59:699 DEBUG 20584 --- [http-nio-8082-exec-7] c.h.cart.mapper.CartMapper.updateNum     : ==>  Preparing: UPDATE cart SET num = num + 1 WHERE user_id = ? AND item_id = ?
+04:27:59:699 DEBUG 20584 --- [http-nio-8082-exec-7] c.h.cart.mapper.CartMapper.updateNum     : ==> Parameters: 1(Long), 546872(Long)
+04:27:59:710 DEBUG 20584 --- [http-nio-8082-exec-7] c.h.cart.mapper.CartMapper.updateNum     : <==    Updates: 1
+04:27:59:842 DEBUG 20584 --- [http-nio-8082-exec-8] c.h.cart.mapper.CartMapper.selectList    : ==>  Preparing: SELECT id,user_id,item_id,num,name,spec,price,image,create_time,update_time FROM cart WHERE (user_id = ?)
+04:27:59:842 DEBUG 20584 --- [http-nio-8082-exec-8] c.h.cart.mapper.CartMapper.selectList    : ==> Parameters: 1(Long)
+04:27:59:845 DEBUG 20584 --- [http-nio-8082-exec-8] c.h.cart.mapper.CartMapper.selectList    : <==      Total: 1
+04:27:59:847 DEBUG 20584 --- [http-nio-8082-exec-8] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] ---> GET http://item-service/items?ids=546872 HTTP/1.1
+04:27:59:848 DEBUG 20584 --- [http-nio-8082-exec-8] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] userInfo: 1
+04:27:59:848 DEBUG 20584 --- [http-nio-8082-exec-8] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] ---> END HTTP (0-byte body)
+04:28:00:389 DEBUG 20584 --- [http-nio-8082-exec-8] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] <--- HTTP/1.1 200  (540ms)
+04:28:00:389 DEBUG 20584 --- [http-nio-8082-exec-8] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] connection: keep-alive
+04:28:00:389 DEBUG 20584 --- [http-nio-8082-exec-8] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] content-type: application/json
+04:28:00:389 DEBUG 20584 --- [http-nio-8082-exec-8] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] date: Thu, 22 Aug 2024 20:28:00 GMT
+04:28:00:389 DEBUG 20584 --- [http-nio-8082-exec-8] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] keep-alive: timeout=60
+04:28:00:389 DEBUG 20584 --- [http-nio-8082-exec-8] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] transfer-encoding: chunked
+04:28:00:389 DEBUG 20584 --- [http-nio-8082-exec-8] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] 
+04:28:00:390 DEBUG 20584 --- [http-nio-8082-exec-8] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] [{"id":"546872","name":"博兿（BOYI）拉杆包男23英寸大容量旅行包户外手提休闲拉杆袋 BY09186黑灰色","price":27500,"stock":10000,"image":"https://m.360buyimg.com/mobilecms/s720x720_jfs/t3301/221/3887995271/90563/bf2cadb/57f9fbf4N8e47c225.jpg!q70.jpg.webp","category":"拉杆箱","brand":"博兿","spec":"{\"颜色\": \"黑色\"}","sold":0,"commentCount":0,"isAD":false,"status":1}]
+04:28:00:390 DEBUG 20584 --- [http-nio-8082-exec-8] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] <--- END HTTP (404-byte body)
+04:29:14:725 DEBUG 20584 --- [http-nio-8082-exec-10] com.hmall.cart.mapper.CartMapper.delete  : ==>  Preparing: DELETE FROM cart WHERE (user_id = ? AND item_id IN (?))
+04:29:14:889 DEBUG 20584 --- [http-nio-8082-exec-10] com.hmall.cart.mapper.CartMapper.delete  : ==> Parameters: 1(Long), 546872(Long)
+04:29:15:068 DEBUG 20584 --- [http-nio-8082-exec-10] com.hmall.cart.mapper.CartMapper.delete  : <==    Updates: 1
+04:29:15:235 DEBUG 20584 --- [http-nio-8082-exec-1] com.hmall.cart.mapper.CartMapper.delete  : ==>  Preparing: DELETE FROM cart WHERE (user_id = ? AND item_id IN (?))
+04:29:15:236 DEBUG 20584 --- [http-nio-8082-exec-1] com.hmall.cart.mapper.CartMapper.delete  : ==> Parameters: 1(Long), 546872(Long)
+04:29:15:263 DEBUG 20584 --- [http-nio-8082-exec-1] com.hmall.cart.mapper.CartMapper.delete  : <==    Updates: 0
+04:29:17:031  INFO 20584 --- [rpcDispatch_RMROLE_1_1_24] i.s.c.r.p.c.RmBranchCommitProcessor      : rm client handle branch commit process:xid=192.168.174.136:8099:63606294167322625,branchId=63606294167322639,branchType=AT,resourceId=jdbc:mysql://192.168.174.136:3306/hm-cart,applicationData={"autoCommit":false}
+04:29:17:038  INFO 20584 --- [rpcDispatch_RMROLE_1_1_24] io.seata.rm.AbstractRMHandler            : Branch committing: 192.168.174.136:8099:63606294167322625 63606294167322639 jdbc:mysql://192.168.174.136:3306/hm-cart {"autoCommit":false}
+04:29:17:040  INFO 20584 --- [rpcDispatch_RMROLE_1_1_24] io.seata.rm.AbstractRMHandler            : Branch commit result: PhaseTwo_Committed
+04:30:08:534 DEBUG 20584 --- [http-nio-8082-exec-4] com.hmall.cart.mapper.CartMapper.delete  : ==>  Preparing: DELETE FROM cart WHERE (user_id = ? AND item_id IN (?))
+04:30:08:535 DEBUG 20584 --- [http-nio-8082-exec-4] com.hmall.cart.mapper.CartMapper.delete  : ==> Parameters: 1(Long), 546872(Long)
+04:30:08:538 DEBUG 20584 --- [http-nio-8082-exec-4] com.hmall.cart.mapper.CartMapper.delete  : <==    Updates: 0
+04:46:01:838 DEBUG 20584 --- [http-nio-8082-exec-5] c.h.cart.mapper.CartMapper.selectList    : ==>  Preparing: SELECT id,user_id,item_id,num,name,spec,price,image,create_time,update_time FROM cart WHERE (user_id = ?)
+04:46:01:841 DEBUG 20584 --- [http-nio-8082-exec-5] c.h.cart.mapper.CartMapper.selectList    : ==> Parameters: 1(Long)
+04:46:01:848 DEBUG 20584 --- [http-nio-8082-exec-5] c.h.cart.mapper.CartMapper.selectList    : <==      Total: 0
+05:58:11:545  INFO 20584 --- [nacos-grpc-client-executor-5531] com.alibaba.nacos.common.remote.client   : [8589000f-4bcd-47a9-a171-2719806402de] Receive server push request, request = NotifySubscriberRequest, requestId = 300
+05:58:11:584  INFO 20584 --- [nacos-grpc-client-executor-5531] com.alibaba.nacos.common.remote.client   : [8589000f-4bcd-47a9-a171-2719806402de] Ack server push request, request = NotifySubscriberRequest, requestId = 300
+05:58:20:378  WARN 20584 --- [Thread-1] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Start destroying common HttpClient
+05:58:20:378  WARN 20584 --- [Thread-5] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Start destroying Publisher
+05:58:20:386  WARN 20584 --- [Thread-5] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Destruction of the end
+05:58:20:394  WARN 20584 --- [Thread-1] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Destruction of the end
+05:58:20:940  INFO 20584 --- [SpringContextShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registering from Nacos Server now...
+05:58:20:947  INFO 20584 --- [SpringContextShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registration finished.
+05:58:21:286  INFO 20584 --- [SpringContextShutdownHook] com.alibaba.nacos.common.remote.client   : Shutdown rpc client, set status to shutdown
+05:58:21:287  INFO 20584 --- [SpringContextShutdownHook] com.alibaba.nacos.common.remote.client   : Shutdown client event executor java.util.concurrent.ScheduledThreadPoolExecutor@2d35820[Running, pool size = 2, active threads = 2, queued tasks = 0, completed tasks = 0]
+05:58:21:287  INFO 20584 --- [SpringContextShutdownHook] com.alibaba.nacos.common.remote.client   : Close current connection 1724336427552_192.168.174.1_52559
+05:58:21:291  INFO 20584 --- [nacos-grpc-client-executor-5535] c.a.n.c.remote.client.grpc.GrpcClient    : [1724336427552_192.168.174.1_52559]Ignore complete event,isRunning:false,isAbandon=false
+05:58:21:308  INFO 20584 --- [SpringContextShutdownHook] c.a.n.c.remote.client.grpc.GrpcClient    : Shutdown grpc executor java.util.concurrent.ThreadPoolExecutor@66ef8658[Running, pool size = 5, active threads = 0, queued tasks = 0, completed tasks = 5536]
+05:58:21:318  INFO 20584 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+05:58:21:347  INFO 20584 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

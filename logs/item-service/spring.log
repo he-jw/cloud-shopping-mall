@@ -1,0 +1,46 @@
+04:27:51:357  INFO 13712 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+04:27:51:391  INFO 13712 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+04:27:51:480  INFO 13712 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 88 ms
+04:27:52:322 DEBUG 13712 --- [http-nio-8081-exec-1] c.h.i.mapper.ItemMapper.selectBatchIds   : ==>  Preparing: SELECT id,name,price,stock,image,category,brand,spec,sold,comment_count,isAD,status,create_time,update_time,creater,updater FROM item WHERE id IN ( ? )
+04:27:52:378 DEBUG 13712 --- [http-nio-8081-exec-1] c.h.i.mapper.ItemMapper.selectBatchIds   : ==> Parameters: 546872(Long)
+04:27:52:445 DEBUG 13712 --- [http-nio-8081-exec-1] c.h.i.mapper.ItemMapper.selectBatchIds   : <==      Total: 1
+04:28:00:382 DEBUG 13712 --- [http-nio-8081-exec-2] c.h.i.mapper.ItemMapper.selectBatchIds   : ==>  Preparing: SELECT id,name,price,stock,image,category,brand,spec,sold,comment_count,isAD,status,create_time,update_time,creater,updater FROM item WHERE id IN ( ? )
+04:28:00:383 DEBUG 13712 --- [http-nio-8081-exec-2] c.h.i.mapper.ItemMapper.selectBatchIds   : ==> Parameters: 546872(Long)
+04:28:00:385 DEBUG 13712 --- [http-nio-8081-exec-2] c.h.i.mapper.ItemMapper.selectBatchIds   : <==      Total: 1
+04:29:13:059 DEBUG 13712 --- [http-nio-8081-exec-4] c.h.i.mapper.ItemMapper.selectBatchIds   : ==>  Preparing: SELECT id,name,price,stock,image,category,brand,spec,sold,comment_count,isAD,status,create_time,update_time,creater,updater FROM item WHERE id IN ( ? )
+04:29:13:199 DEBUG 13712 --- [http-nio-8081-exec-4] c.h.i.mapper.ItemMapper.selectBatchIds   : ==> Parameters: 546872(Long)
+04:29:13:205 DEBUG 13712 --- [http-nio-8081-exec-4] c.h.i.mapper.ItemMapper.selectBatchIds   : <==      Total: 1
+04:29:15:075 DEBUG 13712 --- [http-nio-8081-exec-5] c.h.i.mapper.ItemMapper.selectBatchIds   : ==>  Preparing: SELECT id,name,price,stock,image,category,brand,spec,sold,comment_count,isAD,status,create_time,update_time,creater,updater FROM item WHERE id IN ( ? )
+04:29:15:076 DEBUG 13712 --- [http-nio-8081-exec-5] c.h.i.mapper.ItemMapper.selectBatchIds   : ==> Parameters: 546872(Long)
+04:29:15:084 DEBUG 13712 --- [http-nio-8081-exec-5] c.h.i.mapper.ItemMapper.selectBatchIds   : <==      Total: 1
+04:29:15:488 DEBUG 13712 --- [http-nio-8081-exec-6] c.h.item.mapper.ItemMapper.updateStock   : ==>  Preparing: UPDATE item SET stock = stock - ? WHERE id = ?
+04:29:15:488 DEBUG 13712 --- [http-nio-8081-exec-7] c.h.item.mapper.ItemMapper.updateStock   : ==>  Preparing: UPDATE item SET stock = stock - ? WHERE id = ?
+04:29:15:513 DEBUG 13712 --- [http-nio-8081-exec-6] c.h.item.mapper.ItemMapper.updateStock   : ==> Parameters: 2(Integer), 546872(Long)
+04:29:15:513 DEBUG 13712 --- [http-nio-8081-exec-7] c.h.item.mapper.ItemMapper.updateStock   : ==> Parameters: 2(Integer), 546872(Long)
+04:29:17:024  INFO 13712 --- [rpcDispatch_RMROLE_1_1_24] i.s.c.r.p.c.RmBranchCommitProcessor      : rm client handle branch commit process:xid=192.168.174.136:8099:63606294167322631,branchId=63606294167322654,branchType=AT,resourceId=jdbc:mysql://192.168.174.136:3306/hm-item,applicationData={"autoCommit":false}
+04:29:17:028  INFO 13712 --- [rpcDispatch_RMROLE_1_1_24] io.seata.rm.AbstractRMHandler            : Branch committing: 192.168.174.136:8099:63606294167322631 63606294167322654 jdbc:mysql://192.168.174.136:3306/hm-item {"autoCommit":false}
+04:29:17:031  INFO 13712 --- [rpcDispatch_RMROLE_1_1_24] io.seata.rm.AbstractRMHandler            : Branch commit result: PhaseTwo_Committed
+04:29:17:057  INFO 13712 --- [rpcDispatch_RMROLE_1_2_24] i.s.c.r.p.c.RmBranchCommitProcessor      : rm client handle branch commit process:xid=192.168.174.136:8099:63606294167322625,branchId=63606294167322643,branchType=AT,resourceId=jdbc:mysql://192.168.174.136:3306/hm-item,applicationData={"autoCommit":false}
+04:29:17:057  INFO 13712 --- [rpcDispatch_RMROLE_1_2_24] io.seata.rm.AbstractRMHandler            : Branch committing: 192.168.174.136:8099:63606294167322625 63606294167322643 jdbc:mysql://192.168.174.136:3306/hm-item {"autoCommit":false}
+04:29:17:057  INFO 13712 --- [rpcDispatch_RMROLE_1_2_24] io.seata.rm.AbstractRMHandler            : Branch commit result: PhaseTwo_Committed
+04:30:08:455 DEBUG 13712 --- [http-nio-8081-exec-8] c.h.i.mapper.ItemMapper.selectBatchIds   : ==>  Preparing: SELECT id,name,price,stock,image,category,brand,spec,sold,comment_count,isAD,status,create_time,update_time,creater,updater FROM item WHERE id IN ( ? )
+04:30:08:456 DEBUG 13712 --- [http-nio-8081-exec-8] c.h.i.mapper.ItemMapper.selectBatchIds   : ==> Parameters: 546872(Long)
+04:30:08:458 DEBUG 13712 --- [http-nio-8081-exec-8] c.h.i.mapper.ItemMapper.selectBatchIds   : <==      Total: 1
+04:30:08:547 DEBUG 13712 --- [http-nio-8081-exec-9] c.h.item.mapper.ItemMapper.updateStock   : ==>  Preparing: UPDATE item SET stock = stock - ? WHERE id = ?
+04:30:08:548 DEBUG 13712 --- [http-nio-8081-exec-9] c.h.item.mapper.ItemMapper.updateStock   : ==> Parameters: 2(Integer), 546872(Long)
+04:30:08:937  INFO 13712 --- [rpcDispatch_RMROLE_1_3_24] i.s.c.r.p.c.RmBranchCommitProcessor      : rm client handle branch commit process:xid=192.168.174.136:8099:63606294167322658,branchId=63606294167322664,branchType=AT,resourceId=jdbc:mysql://192.168.174.136:3306/hm-item,applicationData={"autoCommit":false}
+04:30:08:937  INFO 13712 --- [rpcDispatch_RMROLE_1_3_24] io.seata.rm.AbstractRMHandler            : Branch committing: 192.168.174.136:8099:63606294167322658 63606294167322664 jdbc:mysql://192.168.174.136:3306/hm-item {"autoCommit":false}
+04:30:08:937  INFO 13712 --- [rpcDispatch_RMROLE_1_3_24] io.seata.rm.AbstractRMHandler            : Branch commit result: PhaseTwo_Committed
+05:58:10:249  WARN 13712 --- [Thread-1] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Start destroying common HttpClient
+05:58:10:249  WARN 13712 --- [Thread-5] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Start destroying Publisher
+05:58:10:269  WARN 13712 --- [Thread-5] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Destruction of the end
+05:58:10:280  WARN 13712 --- [Thread-1] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Destruction of the end
+05:58:10:917  INFO 13712 --- [SpringContextShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registering from Nacos Server now...
+05:58:10:931  INFO 13712 --- [SpringContextShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registration finished.
+05:58:11:276  INFO 13712 --- [SpringContextShutdownHook] com.alibaba.nacos.common.remote.client   : Shutdown rpc client, set status to shutdown
+05:58:11:279  INFO 13712 --- [SpringContextShutdownHook] com.alibaba.nacos.common.remote.client   : Shutdown client event executor java.util.concurrent.ScheduledThreadPoolExecutor@6da843ed[Running, pool size = 2, active threads = 2, queued tasks = 0, completed tasks = 0]
+05:58:11:281  INFO 13712 --- [SpringContextShutdownHook] com.alibaba.nacos.common.remote.client   : Close current connection 1724336470728_192.168.174.1_52802
+05:58:11:298  INFO 13712 --- [nacos-grpc-client-executor-5523] c.a.n.c.remote.client.grpc.GrpcClient    : [1724336470728_192.168.174.1_52802]Ignore complete event,isRunning:false,isAbandon=false
+05:58:11:356  INFO 13712 --- [SpringContextShutdownHook] c.a.n.c.remote.client.grpc.GrpcClient    : Shutdown grpc executor java.util.concurrent.ThreadPoolExecutor@7e3b9602[Running, pool size = 5, active threads = 0, queued tasks = 0, completed tasks = 5524]
+05:58:11:394  INFO 13712 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+05:58:11:437  INFO 13712 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
